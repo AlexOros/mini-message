@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-const messages = require("./messages");
+const messages = require("../public/javascripts/messages");
 
 router.get("/", function (req, res, next) {
   res.render("new", { title: "New message" });
